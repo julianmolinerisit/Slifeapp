@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ristorante Italiano</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/c-bootstrap.css">
+    <link rel="stylesheet" href="css/banner-grande.css">
+    <link rel="stylesheet" href="css/Product-gallery.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>S</span>life</a>
+        </div>
+        <div class="header-three">
+
+
+            <!-- Large modal -->
+            <div class="selectregion">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Elegir Ubicación</button>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;</button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    Selecciona tu región</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <select id="basic2" class="show-tick form-control" multiple>
+                                            <optgroup label="">
+                                                <option selected style="display:none;color:#eee;">Seleccionar region
+                                                </option>
+                                            <optgroup label="Santa Fe">
+                                                <option>Santa Fe</option>
+                                                <option>Rosario</option>
+                                                <option>San Lorenzo</option>
+                                                <option>Rafaela</option>
+                                            </optgroup>
+                                            <optgroup label="Buenos Aires">
+                                                <option>Caba</option>
+                                                <option>Conurbano</option>
+                                                <option>Recoleta</option>
+                                                <option>Caballito</option>
+                                                <option>Puerto Madero</option>
+                                            </optgroup>
+                                            <optgroup label="Mendoza">
+                                                <option>General Alvear</option>
+                                                <option>Godoy Cruz</option>
+                                                <option>Guaymallén</option>
+                                                <option>Junín</option>
+                                                <option>La Paz</option>
+                                            </optgroup>
+                                            <optgroup label="San Juan">
+                                                <option>Villa Krause</option>
+                                                <option>Aberastain</option>
+                                                <option>Albardón</option>
+                                                <option>Villa San Agustín</option>
+                                                <option>San José de Jáchal</option>
+                                            </optgroup>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" id="show-menu">
+            <nav>
+                <ul>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i><span class="title-menu">Cuenta</span></a>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-language"></i><span class="title-menu">Idioma</span></a></li>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-circle-info"></i><span
+                                class="title-menu">Ayuda</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Creamos en un div el icono de menu, de esta forma lo vamos a trabajar en js para ocultarlo.-->
+        <div id="ico-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!--Portada-->
+    </header>
+
+    <!--Este div va a contener todo lo de nuestra web, lo usamos para hacer la animacion
+del menu-->
+
+    <div class="container-all" id="move-content">
+
+        <div class="contenedor">
+            <section class="product-contenedor">
+
+                <div class="products-main">
+                    <div class="product" data-platillo="ensalada">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="ensalada">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="ensalada">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="pasta">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="pasta">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="pasta">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="pizza">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="pizza">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="pizza">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="postre">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="postre">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                    <div class="product" data-platillo="postre">
+                        <img src="./images/pasta4.jpg" alt="postre">
+                        <h2>Quinoa</h2>
+                        <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
+                        <div class="precio">
+                            <p>$40.0</p>
+                            <button><i class="fas fa-shopping-basket"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
